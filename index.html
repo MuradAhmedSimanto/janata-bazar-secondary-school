@@ -88,74 +88,92 @@
 }
 </style>
 
-    <section class="admission-form">
-        <h2>ভর্তি ফর্ম</h2>
-        <form>
-            <label>নাম:</label>
-            <input type="text" placeholder="আপনার নাম লিখুন" required>
+<section class="admission-form">
+    <h2>ভর্তি ফর্ম</h2>
+    <form>
+        <label for="name">নাম:</label>
+        <input type="text" id="name" name="name" placeholder="পূর্ণ নাম লিখুন" required>
 
-            <label>পিতা/মাতার নাম:</label>
-            <input type="text" placeholder="পিতা/মাতার নাম" required>
+        <label for="father">পিতার নাম:</label>
+        <input type="text" id="father" name="father" placeholder="পিতার নাম লিখুন" required>
 
-            <label>শ্রেণি:</label>
-            <select required>
-                <option value="">শ্রেণি নির্বাচন করুন</option>
-                <option>৬ষ্ঠ</option>
-                <option>৭ম</option>
-                <option>৮ম</option>
-                <option>৯ম</option>
-                <option>১০ম</option>
-            </select>
+        <label for="mother">মাতার নাম:</label>
+        <input type="text" id="mother" name="mother" placeholder="মাতার নাম লিখুন" required>
 
-            <label>মোবাইল নাম্বার:</label>
-            <input type="tel" placeholder="মোবাইল নাম্বার" required>
+        <label for="birth">জন্ম তারিখ:</label>
+        <input type="date" id="birth" name="birth" required>
 
-            <button type="submit">জমা দিন</button>
-        </form>
-    </section>
+        <label for="class">ভর্তির শ্রেণী:</label>
+        <select id="class" name="class" required>
+            <option value="">--শ্রেণী নির্বাচন করুন--</option>
+            <option value="6">ষষ্ঠ</option>
+            <option value="7">সপ্তম</option>
+            <option value="8">অষ্টম</option>
+            <option value="9">নবম</option>
+            <option value="10">দশম</option>
+        </select>
+
+        <label for="phone">মোবাইল নাম্বার:</label>
+        <input type="tel" id="phone" name="phone" placeholder="১১ ডিজিট নাম্বার" pattern="[0-9]{11}" required>
+
+        <button type="submit">জমা দিন</button>
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <p class="copyright">সকল তথ্য সংরক্ষিত © জনতা বাজার মাধ্যমিক বিদ্যালয়</p>
 </footer>
-
-
-
-
 <section class="result-section">
     <h2>📊 পরীক্ষার ফলাফল</h2>
-    <table class="result-table">
-        <thead>
-            <tr>
-                <th>রোল</th>
-                <th>নাম</th>
-                <th>শ্রেণি</th>
-                <th>বিষয়</th>
-                <th>জিপিএ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Murad Ahmed Simanto</td>
-                <td>10</td>
-                <td>All</td>
-                <td>3.28</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Arafat hasan Rohan</td>
-                <td>10</td>
-                <td>All</td>
-                <td>3.17</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Jidan</td>
-                <td>10</td>
-                <td>All</td>
-                <td>3.22</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table class="result-table">
+            <thead>
+                <tr>
+                    <th>রোল</th>
+                    <th>নাম</th>
+                    <th>শ্রেণি</th>
+                    <th>বিষয়</th>
+                    <th>জিপিএ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Murad Ahmed Simanto</strong></td>
+                    <td>10</td>
+                    <td>All</td>
+                    <td>3.28</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Arafat Hasan Rohan</strong></td>
+                    <td>10</td>
+                    <td>All</td>
+                    <td>3.17</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Jidan</strong></td>
+                    <td>10</td>
+                    <td>All</td>
+                    <td>3.22</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <div class="notice-board">
@@ -168,7 +186,7 @@
 
 
 <section class="contact-section" id="contact">
-  <h2>Goole Map</h2>
+  <h2>Google Map</h2>
    <!-- Google Map -->
     <div class="map-container">
       <iframe
