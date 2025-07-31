@@ -204,3 +204,211 @@ footer {
   display: block;
   text-align: center;
 }
+.admission-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admission-form h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.admission-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admission-form label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.admission-form input,
+.admission-form select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.admission-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admission-form button:hover {
+    background-color: #0066cc;
+
+}
+
+@media (max-width: 600px) {
+    .result-table th,
+    .result-table td {
+        font-size: 14px;
+        padding: 10px 6px;
+    }
+
+    .result-section h2 {
+        font-size: 20px;
+    }
+}
+.result-section {
+    max-width: 1000px; 
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.result-section h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.result-table th,
+.result-table td {
+    padding: 12px 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+}
+
+.result-table th {
+    background-color: #003366;
+    color: white;
+}
+
+.result-table td strong {
+    color: #004080;
+}
+
+@media (max-width: 600px) {
+    .result-table th,
+    .result-table td {
+        font-size: 14px;
+        padding: 10px 6px;
+    }
+
+    .result-section h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+.auto-slider {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slide-track {
+  display: flex;
+  width: calc(600px * 6); /* (এক ছবির width × মোট ছবি সংখ্যা) */
+  animation: scroll 30s linear infinite;
+}
+
+.slide {
+  width: 600px;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-1800px); } /* একেকটা 600px × 3 ছবি = 1800px */
+}
+
+.auto-slider {
+  margin: 4px auto; /* আগের margin: auto ছিল, এখন একটু উপরে নিচে */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Menu Styles */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #34495e;
+  padding: 10px 0;
+}
+
+.nav-links li {
+  margin: 8px 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links i {
+  margin-right: 6px;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #1abc9c;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
